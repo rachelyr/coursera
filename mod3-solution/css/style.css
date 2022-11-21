@@ -30,16 +30,15 @@ body{
   text-decoration: none;
 }
 
-}
 #nav-list{
 	margin-top: 10px;
 }
-#nav-list a {
+#navbarSupportedContent a {
   color: #951C49;
   text-align: center;
 }
-#nav-list a:hover {
-  background: #E7E7E7;
+#navbarSupportedContent a:hover {
+  background-color: #8FBC8F ;
 }
 .navbar-header button.navbar-toggle, .navbar-header .icon-bar {
   border: 1px solid #61122f;
@@ -50,3 +49,57 @@ body{
   margin-top: -30px;
 }
 
+#navbarSupportedContent{
+	text-align: center;
+	color: solid black;
+}
+/*Page content*/
+h2{
+	padding-top: 15px;
+	padding-bottom: 15px;
+}
+h3{
+	font-family: Lora, sans-serif;
+}
+.menuboxinfo{
+	text-align: center;
+	border: 2px solid black;
+	padding: 0px 15px;
+	background-color: #8FBC8F;
+}
+
+/****** Large Devices******/
+@media(min-width: 993px){
+	.hideNav{
+		visibility: hidden;
+	}
+}
+/****** Medium Devices ******/
+@media(min-width: 992px) and (max-width: 1199px) {
+	.hideNav{
+		visibility: hidden;
+	}
+}
+
+/***** Small Devices ******/
+@media(min-width:768px) and (max-width:991px){
+	.hideNav{
+		visibility: hidden;
+	}
+	.menuboxinfo{
+    	margin-bottom: 18px;
+    }
+}
+
+/***** Extra Small devices ******/
+@media(max-width: 767px) {
+	#navbarSupportedContent a{
+		font-size: 1.2em;
+	}
+    #navbar-toggle{
+    	float:right;
+    }
+    .menuboxinfo{
+    	margin-bottom: 18px;
+    }
+}
